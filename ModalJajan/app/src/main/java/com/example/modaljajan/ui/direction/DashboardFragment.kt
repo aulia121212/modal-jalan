@@ -1,4 +1,4 @@
-package com.example.modaljajan.ui.dashboard
+package com.example.modaljajan.ui.direction
 
 import android.os.Bundle
 import android.view.LayoutInflater
