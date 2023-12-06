@@ -12,20 +12,21 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
+        android:id="@+id/navigation_direction"
         android:name="com.example.modaljajan.ui.direction.DashboardFragment"
-        android:label="@string/title_dashboard"
+        android:label="@string/title_direction"
         tools:layout="@layout/fragment_direction" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.dicoding.picodiploma.mybottomnavigation.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_jejak"
+        android:name="com.example.modaljajan.ui.notifications.JejakFragment"
+        android:label="@string/title_jejak"
+        tools:layout="@layout/fragment_jejak" />
 
     <fragment
         android:id="@+id/navigation_profile"
-        android:name="com.dicoding.picodiploma.mybottomnavigation.ProfileFragment"
+        android:name="com.example.modaljajan.ProfileFragment"
         android:label="@string/title_profile"
         tools:layout="@layout/fragment_profile"/>
+
 </navigation>

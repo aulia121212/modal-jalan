@@ -1,8 +1,8 @@
 <resources>
-    <string name="app_name">Modal Jajan</string>
+    <string name="app_name">Modal Jalan</string>
     <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_direction">Direction</string>
+    <string name="title_jejak">Jejak</string>
     <string name="title_profile">Profile</string>
 
 
