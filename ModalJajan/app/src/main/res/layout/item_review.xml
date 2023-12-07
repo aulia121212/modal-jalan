@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginHorizontal="30dp"
+    android:layout_marginVertical="20dp"
+    app:cardCornerRadius="20dp"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="15dp"
+        app:cardCornerRadius="20dp"
+        android:layout_marginTop="8dp"
+        android:id="@+id/cardreview">
+
+        <ImageView
+            android:id="@+id/gambarcirclepotouser"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/potouser"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/namauser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="10dp"
+        android:text="Nama User"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/deskripsi_user"
+        android:layout_width="170dp"
+        android:layout_height="20dp"
+        android:text="Deskripsi dari user"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="75dp"/>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/baseline_star_24"
+        android:layout_marginVertical="15dp"
+        android:layout_gravity="end"
+        android:layout_marginEnd="50dp"/>
+
+    <TextView
+        android:id="@+id/total_review_user"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:layout_marginVertical="20dp"
+        android:layout_gravity="end"
+        android:layout_marginEnd="15dp"
+        android:text="5.0"
+        android:textStyle="bold"
+        android:textSize="15sp"/>
+
+</androidx.cardview.widget.CardView>
