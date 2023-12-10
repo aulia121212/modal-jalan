@@ -18,6 +18,9 @@
         android:theme="@style/Theme.ModalJajan"
         tools:targetApi="31">
         <activity
+            android:name=".ui.detailDirection.DetailDirectionActivity"
+            android:exported="false" />
+        <activity
             android:name=".view.signup.SignuppActivity"
             android:exported="false" />
         <activity
