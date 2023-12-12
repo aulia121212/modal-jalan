@@ -1,10 +1,6 @@
 package com.example.modaljajan.data.retrofit
 
-import com.dicoding.picodiploma.loginwithanimation.view.addstory.FileUploadResponse
-import com.dicoding.picodiploma.loginwithanimation.view.detail.DetailResponse
-import com.dicoding.picodiploma.loginwithanimation.view.login.LoginResponse
-import com.dicoding.picodiploma.loginwithanimation.view.main.StoryResponse
-import com.dicoding.picodiploma.loginwithanimation.view.signup.SignupResponse
+
 import okhttp3.MultipartBody
 import okhttp3.RequestBody
 import retrofit2.Call
@@ -19,17 +15,6 @@ import retrofit2.http.Path
 
 interface ApiService {
 
-    @GET("stories/{id}")
-    suspend fun obtainStoryDetails(
-        @Header("Authorization") token: String,
-        @Path("id") storyId: String
-    ): DetailResponse
-
-
-    @GET("stories")
-    suspend fun getStories(
-        @Header("Authorization") token: String,
-    ): StoryResponse
 
     @FormUrlEncoded
     @POST("register")

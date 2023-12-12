@@ -1,4 +1,4 @@
-package com.example.modaljajan.ui.notifications
+package com.example.modaljajan.ui.jejak
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,11 +7,11 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.example.modaljajan.databinding.FragmentNotificationsBinding
+import com.example.modaljajan.databinding.FragmentJejakBinding
 
 class JejakFragment : Fragment() {
 
-    private var _binding: FragmentNotificationsBinding? = null
+    private var _binding: FragmentJejakBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -25,7 +25,7 @@ class JejakFragment : Fragment() {
         val notificationsViewModel =
             ViewModelProvider(this).get(JejakViewModel::class.java)
 
-        _binding = FragmentNotificationsBinding.inflate(inflater, container, false)
+        _binding = FragmentJejakBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
         val textView: TextView = binding.textNotifications

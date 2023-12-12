@@ -1,7 +1,7 @@
 package com.example.modaljajan.data
 
-import com.dicoding.picodiploma.loginwithanimation.data.pref.UserModel
-import com.dicoding.picodiploma.loginwithanimation.data.pref.UserPreference
+import com.example.modaljajan.data.pref.UserModel
+import com.example.modaljajan.data.pref.UserPreference
 import kotlinx.coroutines.flow.Flow
 
 class UserRepository private constructor(

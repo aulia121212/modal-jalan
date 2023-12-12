@@ -39,15 +39,19 @@ android {
     buildFeatures {
         viewBinding = true
     }
+
 }
 
 dependencies {
 
+    implementation("androidx.navigation:navigation-ui-ktx:2.7.2")
+    implementation("androidx.navigation:navigation-fragment-ktx:2.7.2")
     // UI
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.10.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+    implementation("androidx.databinding:databinding-runtime:8.2.0")
 
 // Testing
     testImplementation("junit:junit:4.13.2")

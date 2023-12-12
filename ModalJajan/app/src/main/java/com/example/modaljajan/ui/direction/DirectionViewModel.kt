@@ -1,13 +1,13 @@
-package com.example.modaljajan.ui.notifications
+package com.example.modaljajan.ui.direction
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class JejakViewModel : ViewModel() {
+class DirectionViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is notifications Fragment"
+        value = "This is direction Fragment"
     }
     val text: LiveData<String> = _text
 }
