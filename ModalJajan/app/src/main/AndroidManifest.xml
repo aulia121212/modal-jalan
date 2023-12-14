@@ -18,6 +18,12 @@
         android:theme="@style/Theme.ModalJajan"
         tools:targetApi="31">
         <activity
+            android:name=".view.welcome.WelcomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+        <activity
             android:name=".ui.detailDirection.DetailDirectionActivity"
             android:exported="false" />
         <activity
@@ -35,12 +41,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:label="@string/app_name"/>
-
+            android:label="@string/app_name" />
     </application>
 
 </manifest>

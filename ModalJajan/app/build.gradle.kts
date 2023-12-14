@@ -52,6 +52,7 @@ dependencies {
     implementation("com.google.android.material:material:1.10.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation("androidx.databinding:databinding-runtime:8.2.0")
+    implementation("com.google.android.ads:mediation-test-suite:3.0.0")
 
 // Testing
     testImplementation("junit:junit:4.13.2")

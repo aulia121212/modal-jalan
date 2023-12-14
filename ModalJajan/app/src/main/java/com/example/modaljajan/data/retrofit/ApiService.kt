@@ -1,6 +1,8 @@
 package com.example.modaljajan.data.retrofit
 
 
+import com.example.modaljajan.view.login.LoginResponse
+import com.example.modaljajan.view.signup.SignupResponse
 import okhttp3.MultipartBody
 import okhttp3.RequestBody
 import retrofit2.Call
@@ -14,7 +16,6 @@ import retrofit2.http.Part
 import retrofit2.http.Path
 
 interface ApiService {
-
 
     @FormUrlEncoded
     @POST("register")
