@@ -18,6 +18,9 @@
         android:theme="@style/Theme.ModalJajan"
         tools:targetApi="31">
         <activity
+            android:name=".ui.rekomendasiBudget.RekomendasiBudgetActivity"
+            android:exported="false" />
+        <activity
             android:name=".view.welcome.WelcomeActivity"
             android:exported="false" />
         <activity
