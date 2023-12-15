@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.pungli.AddPungliActivity"
+    android:background="@color/coklat1">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="450dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:cardCornerRadius="20dp">
+
+        <TextView
+            android:id="@+id/title_pungli"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pungli in :"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:id="@+id/location_pungli_here"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="80dp"
+            android:layout_gravity="center_horizontal"
+            android:textSize="15sp"
+            android:text="Jalan Dicoding, No 10. Kota Bangkit, Kecamatan Dicoding"
+            android:textAlignment="center"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/input_harga_pungli"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/abu"
+            app:cardCornerRadius="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="220dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:hint="Harga Pungli"
+                android:gravity="center"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Pungli"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="320dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
