@@ -14,23 +14,23 @@ import android.view.WindowInsets
 import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 import com.example.modaljajan.data.retrofit.Retrofit
-import com.example.modaljajan.databinding.ActivitySignuppBinding
+import com.example.modaljajan.databinding.ActivitySignupBinding
 import com.example.modaljajan.view.login.LoginnActivity
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
 class SignuppActivity : AppCompatActivity() {
-    private lateinit var binding: ActivitySignuppBinding
+    private lateinit var binding: ActivitySignupBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivitySignuppBinding.inflate(layoutInflater)
+        binding = ActivitySignupBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        val name = binding.nameEditText
-        val email = binding.emailEditText
-        val password = binding.passwordEditText
-        val signupButton = binding.signupButton
+        val name = binding.
+        val email = binding.
+        val password = binding.
+        val signupButton = binding.
 
         playAnimation()
         setupView()
