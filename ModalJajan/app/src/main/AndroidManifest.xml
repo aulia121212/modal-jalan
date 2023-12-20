@@ -18,13 +18,13 @@
         android:theme="@style/Theme.ModalJajan"
         tools:targetApi="31">
         <activity
+            android:name=".ui.addReview.AddReviewActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.rekomendasiBudget.RekomendasiBudgetActivity"
             android:exported="false" />
         <activity
             android:name=".view.welcome.WelcomeActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity2"
             android:exported="false" />
         <activity
             android:name=".ui.detailDirection.DetailDirectionActivity"
@@ -33,10 +33,7 @@
             android:name=".view.signup.SignuppActivity"
             android:exported="false" />
         <activity
-            android:name=".view.login.LoginnActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.preview.PreviewActivity"
+            android:name=".view.login.LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

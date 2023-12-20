@@ -1,15 +1,19 @@
 package com.example.modaljajan.view.login
 
 import androidx.lifecycle.ViewModel
-import androidx.lifecycle.viewModelScope
 import com.example.modaljajan.data.UserRepository
-import com.example.modaljajan.data.pref.UserModel
-import kotlinx.coroutines.launch
+import com.example.modaljajan.util.LoadingDialog
+import com.example.modaljajan.util.SharedPref
 
-class LoginViewModel(private val repository: UserRepository) : ViewModel() {
-    fun saveSession(user: UserModel) {
-        viewModelScope.launch {
-            repository.saveSession(user)
-        }
-    }
+class LoginViewModel(private val userRepository: UserRepository) : ViewModel() {
+
+    fun loginUser(
+        username: String,
+        password: String,
+        activity: LoginActivity,
+        userPref: SharedPref,
+        loadingDialog: LoadingDialog,
+
+        ) =
+        userRepository.loginUser(username, password, activity, userPref, loadingDialog)
 }
