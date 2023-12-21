@@ -1,0 +1,162 @@
+modalJalan API :
+URL :
+https://loginapp-nrf4s4an2a-et.a.run.app/
+
+
+//User 
+ app.post("/signup");
+ app.post("/signin");
+ app.post("/signout");
+
+//Endpoint verifikasi
+app.get("/test/all");
+app.get("/test/user");
+
+//endpoint gambar
+app.get("/tempat-wisata/:tempatWisataId/gambar");
+res: nama_gambar : {url}
+
+//Endpoint untuk Pungli
+app.get("/pungli");
+Res :
+	"id": 1,
+        "tempatWisataId": 1,
+        "biaya": 900000,
+        "createdAt": "2023-12-20T13:30:57.000Z",
+        "updatedAt": "2023-12-20T13:30:57.000Z"
+
+app.get("/tempat-wisata/:id/pungli", );
+Res : 
+     "id": 2,
+    "tempatWisataId": 1,
+    "biaya": 10000,
+    "createdAt": "2023-12-20T13:31:45.000Z",
+    "updatedAt": "2023-12-20T13:31:45.000Z"
+app.get("/tempat-wisata/:tempatWisataId/pungli-wisata", );
+"detailPungli": [
+        {
+            "id": 1,
+            "biaya": 900000,
+            "tempatWisataId": 1,
+            "tempatWisata": "Tidak Diketahui"
+        },
+    ],
+    "PungliBiaya": "10000 - 900000"
+app.post("/tempat-wisata/:tempatWisataId/add-pungli", );
+Req:
+"biaya"
+res:
+"createdAt": "2023-12-21T01:41:06.637Z",
+    "updatedAt": "2023-12-21T01:41:06.637Z",
+    "id": 4,
+    "biaya": 10000,
+    "tempatWisataId": "1"
+app.delete("/tempat-wisata/:id/pungli", );
+Res : Message
+
+//Endpoint untuk Review Wisata
+  app.get("/review", );
+Res : "id": 1,
+        "tempatWisataId": 1,
+        "userId": 1,
+        "review": "jelek banget tapi masih banyak pungli",
+        "rating": 1,
+        "createdAt": "2023-12-20T13:31:01.000Z",
+        "updatedAt": "2023-12-20T13:31:01.000Z"
+
+  app.get("/tempat-wisata/:tempatWisataId/review", )
+"id": 1,
+        "review": "jelek banget tapi masih banyak pungli",
+        "rating": 1,
+        "user": {
+            "username": "ahmad11",
+            "email": "ahmad11@gmail.com"
+        },
+        "tempatWisata": "Tidak Diketahui"
+  app.post("/tempat-wisata/:tempatWisataId/add-review");
+Req: 
+"review": "jelek banget najis dah  masih banyak pungli",
+    "rating": 3
+Res: 
+"createdAt": "2023-12-21T01:43:43.655Z",
+    "updatedAt": "2023-12-21T01:43:43.655Z",
+    "id": 4,
+    "tempatWisataId": "1",
+    "userId": 1,
+    "review": "jelek banget najis dah  masih banyak pungli",
+    "rating": 3
+ app.delete("/tempat-wisata/:id/review");
+Res: message
+//Endpoint untuk Tempat Wisata
+  app.get("/tempat-wisata");
+Res:
+"id": 1,
+        "nama": "Gunung Bunder",
+        "alamat": "Taman Wisata Alam Gunung Bunder Kp Ciburial, Desa Karang Tengah,Kec Babakan Madang, Kab Bogor",
+        "deskripsi": null,
+        "level_pungli": null,
+        "tiket_masuk": 15000,
+        "tiket_parkir": 15000,
+        "makan": 30000,
+        "createdAt": "2023-12-20T19:17:42.000Z",
+        "updatedAt": "2023-12-20T19:17:42.000Z"
+  app.get("/tempat-wisata/:id/budget");
+"id": 1,
+    "tiket_masuk": 15000,
+    "makan": 30000,
+    "tiket_parkir": 15000,
+    "pungli": [
+        {
+            "biaya": 900000
+        },
+        {
+            "biaya": 10000
+        },
+        {
+            "biaya": 10000
+        },
+        {
+            "biaya": 10000
+        }
+    ],
+    "pungli_biaya_range": "10000 - 900000"
+  app.get("/tempat-wisata/:id")
+"id": 1,
+    "nama": "Gunung Bunder",
+    "alamat": "Taman Wisata Alam Gunung Bunder Kp Ciburial, Desa Karang Tengah,Kec Babakan Madang, Kab Bogor",
+    "deskripsi": null,
+    "reviews": [
+        {
+            "rating": 1
+        },
+        {
+            "rating": 3
+        },
+        {
+            "rating": 3
+        },
+        {
+            "rating": 3
+        }
+    ],
+    "ratingRataRata": "2.50"
+  app.post("/tempat-wisata/add");
+Req : 
+"nama": "Gunung Bunder",
+  "alamat": "Taman Wisata Alam Gunung Bunder Kp Ciburial, Desa Karang Tengah,Kec Babakan Madang, Kab Bogor",
+  "deskripsi":"wisata alam pegunungan",
+  "tiket_masuk": 15000,
+  "tiket_parkir": 15000,
+  "makan": 30000
+Res :
+"message": "Tempat Wisata berhasil disimpan",
+    "data": {
+        "createdAt": "2023-12-21T01:28:21.367Z",
+        "updatedAt": "2023-12-21T01:28:21.368Z",
+        "id": 4,
+        "nama": "Gunung Bunder",
+        "alamat": "Taman Wisata Alam Gunung Bunder Kp Ciburial, Desa Karang Tengah,Kec Babakan Madang, Kab Bogor",
+        "makan": 30000,
+        "tiket_parkir": 15000,
+        "tiket_masuk": 15000
+  app.delete("/tempat-wisata/:id");
