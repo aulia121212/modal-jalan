@@ -54,7 +54,7 @@
             android:layout_height="25dp"
             android:layout_gravity="center_vertical"
             android:layout_marginStart="5dp"
-            android:src="@drawable/baseline_location_on_24" />
+            android:src="@drawable/baseline_pin_drop_24" />
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/input_location"
@@ -86,7 +86,7 @@
             android:layout_height="25dp"
             android:layout_gravity="center_vertical"
             android:layout_marginStart="5dp"
-            android:src="@drawable/baseline_attach_money_24" />
+            android:src="@drawable/baseline_account_circle_24" />
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/input_budget"
