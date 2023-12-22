@@ -1,0 +1,22 @@
+[
+  {
+    "id": "0",
+    "cleaned": ["bagus", "urus"]
+  },
+  {
+    "id": "1",
+    "cleaned": ["kapok", "pungli", "10000"]
+  },
+  {
+    "id": "2",
+    "cleaned": ["bagus", "refresing", "pungli", "pungli"]
+  },
+  {
+    "id": "3",
+    "cleaned": ["gasuka", "pungli", "20rb", "bayar", "10rb", "motor", "5rb", "kurang"]
+  },
+  {
+    "id": "4",
+    "cleaned": ["sejuk", "nyejukin", "bagus"]
+  }
+]
